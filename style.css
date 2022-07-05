@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&family=Montserrat&family=Rubik:ital,wght@0,400;0,500;1,300&family=Sansita&family=Sansita+Swashed&family=Source+Sans+Pro&display=swap');
+
+:root{
+    --font-title: 'Sansita', sans-serif;
+    --font-title-cu:'Sansita Swashed', cursive;
+    --font-description: 'Montserrast', sans-serif;
+    --color-cyan: rgb(179, 232, 229);
+    --color-white: rgb(255, 255, 255);
+    --color-black: rgb(0, 0, 0);
+    --color-gray: rgb(217, 217, 217);
+    --color-mustard:rgba(250, 172, 82, 0.82);
+    --color-green-dark:rgb(59, 172, 182);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-description);
+    padding: 1rem;
+    /* background-color: rgb(138, 43, 226, 0.5); */
+}
+.logo img{
+    width: 3rem;
+    margin-left: 1rem;
+}
+
+/* cabecera */
+.header{
+    position: sticky;
+    height: 6rem;
+    width: 100%;
+}
+
+.header-top{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-cyan);
+}
+
+.tools i{
+    padding: 0 .3rem;
+    font-size: 1.3rem;
+}
+
+.header-down{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-cyan) ;
+}
+.button-bars{
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+}
+.fa-bars{
+    margin-right: 1rem;
+}
+
+.menu{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: calc(100vh - 7rem);
+    left: 0;
+    top: 6rem;
+    padding: 2rem;
+    background-color: var(--color-cyan);
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.menu-item{
+    width: 7rem;
+    padding: 0.8rem 0 ;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    border-top: 0.3rem dashed var(--color-black);
+    border-bottom: 0.3rem dashed var(--color-black);
+    
+}
+
+.menu-item a{
+    text-decoration:none;
+    color: var(--color-black);
+}
+.fa-angles-down{
+    margin: 0 0 0 0.5rem;
+}
+
+.menu_active{
+    display: flex;
+}
+
+.button-bars, .fa-user, .fa-magnifying-glass, .fa-moon{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px){
+    .menu{
+        display: flex;
+        position: static;
+        flex-direction: row;
+        height: 4rem;
+        width: 100%;
+        padding: 0 1rem;
+        /* right: 0; */
+    }
+    .button-bars{
+        display: none;
+    }
+    .menu-item{
+        padding: 0.5rem;
+        width: 100%;
+        border-top: none;
+        border-bottom: none;
+        font-size: 0.7rem;
+        border-radius: 0.5rem;
+        margin: 0 0.5rem;
+        background-color: var(--color-gray);
+        
+    }
+    .logo img{
+        width: 3.5rem;
+    }
+    .tools i{
+        padding: 0 .8rem;
+        font-size: 1.5rem;
+    }
+    .menu-item a{
+        display: flex;
+    }
+}
+
+@media screen and (min-width:900px){
+    .menu-item{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .menu-item{
+        font-size: 1rem;
+    }
+}
+
+/* estilos a la portada  */
+
+.main {
+    padding: 2rem 0;
+    text-align: center;
+}
+.imagen_portada{
+
+}
+.imagen_portada img{
+    width: 19rem;
+}
+
+.description_portada{
+    max-width: 20rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    line-height: 2rem;
+    border-top: 1.5rem solid var(--color-mustard);
+    border-bottom: 1.5rem solid var(--color-mustard);
+}
+.description_portada p{
+    font-family: 1.5rem;
+    font-weight: 600;   
+}
+
+.description_portada span{
+    font-family: var(--font-title);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.container_figure{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+.star{
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--color-mustard);
+    clip-path: circle(50% at 50% 50%);
+}
+.star-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}.star-2{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}.star-3{
+    grid-column: 5/6;
+    grid-row: 1/2;
+}.star-4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}.star-5{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.star:hover{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+@media screen and (min-width:800px){
+    .main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-content: center;
+        justify-items: center;
+    }
+    .imagen_portada img{
+        width: 25rem;
+    }
+    .container_figure{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+    }
+    .star{
+        margin: 0 1.5rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .main{
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        justify-items: unset;
+        align-content: unset;
+    }
+    .imagen_portada img{
+        width:32rem;
+    }
+
+    .imagen_portada{
+        /* margin: auto ; */
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .description_portada{
+        margin: 2rem 0;
+        min-width: 30rem;
+        padding: 1rem 7rem 1rem 1rem;
+        border-right: 1.5rem solid var(--color-mustard);
+        border-left: 1.5rem solid var(--color-white) ;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .container_figure{
+        margin: 2rem 0;
+        height:4rem ;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .star{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+/* Darle estilo la educacion sin barreras */
+
+.education_barrier{
+    width: 100%;
+    padding: 1.5rem ;
+    text-align: center;
+    background-color: var(--color-green-dark);
+}
+.description_barrier{
+    margin: 2rem 0;
+    max-width: 20rem;
+}
+
+.image_skill img{
+    width: 10rem;
+}
+.title_skill{
+    margin: 2rem 0;
+}
+.description_skill{
+    margin: 1.5rem 0 3.5rem;
+}
+
+@media screen and (min-width:800px){
+    .description_barrier{
+        margin: 2rem auto;
+        max-width: 30rem;
+    }
+
+    .contain_skill{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+    .description_skill{
+        margin: 1.5rem auto 3.5rem;
+        width: 15rem;
+    }
+    .card_skill3{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .contain_skill{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .card_skill2{
+        margin: 0 2.5rem;
+    }
+    .card_skill1, .card_skill3{
+        margin-top: 4rem;
+    }
+}
+
+
+
