@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLEGIO UNIMAT</title>
+    <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+    
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/>
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+        
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="./Style/styleMatricu.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <p class="header-contact"><i class="fa-solid fa-phone"></i> 01-1458269</p>
+            <div class="tools">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+
+        <div class="header-down">
+            <div class="logo">
+                <a href="#"><img src="./assets/logoUnimatSFondo.webp" alt="Logo del colegio UNIMAT"></a>
+            </div>
+
+            <nav class="header-menu">
+                <button id="button-bars" type="button" class="button-bars"><i class="fa-solid fa-bars" id="button_close"></i></button>
+
+                <ul class="menu" id="menu">
+                    <li class="menu-item">
+                        <a href="./index.html">inicio <i class="fa-solid fa-angles-down"></i></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./quienesSomos.html">nosotros <i class="fa-solid fa-angles-down"></i></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./matricula.html">matrículas <i class="fa-solid fa-angles-down"></i></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">éxitos <i class="fa-solid fa-angles-down"></i></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">testimonios <i class="fa-solid fa-angles-down"></i></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">contactos <i class="fa-solid fa-angles-down"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="matricula-image">
+            <img src="./assets/MATRICULA/encuestas.webp" alt="Alumnos encuestados">
+        </div>
+        <h1 class="lomo-title">La educación transforma vidas</h1>
+
+        <form  class="form" action="#" method="post">
+            <h1 class="form-title">MATRICULA 2022</h1>
+            <P class="form-description">ingresa tus datos para comunicarnos contigo</P>
+            <div class="data-contain">
+                <div>
+                    <input type="text" id="nombres" minlength="3" maxlength="50" required placeholder="Nombres">
+                </div>
+                <div>
+                    <input type="text" minlength="5" maxlength="50" required placeholder="Apellidos">
+                </div>
+                <div>
+                    <input type="text" minlength="5" maxlength="20" required placeholder="Distrito">
+                </div>
+                <div>
+                    <input type="email" minlength="5" maxlength="100" required placeholder="Correo electronico">
+                </div>
+                <div>
+                    <input type="number" minlength="8" maxlength="8" required placeholder="DNI">
+                </div>
+                <div>
+                    <input type="tel" minlength="9" maxlength="9" required placeholder="Teléfono">
+                </div>
+                <div>
+                    <input type="text" minlength="10" maxlength="50" placeholder="Colegio de procedencia">
+                </div>
+                <div>
+                    <label for="">fecha de nacimiento</label>
+                    <input type="date" required placeholder="Fecha de nacimiento">
+                </div>
+                <div>
+                        <select name="" id="" required name="grado" id="">
+                            <option value selected>Elija el grado de secundaria</option>
+                            <option value="primero">primero</option>
+                            <option value="segundo">segundo</option>
+                            <option value="tercero">tercero</option>
+                            <option value="cuarto">cuarto</option>
+                            <option value="quinto">quinto</option>
+                        </select>
+                 </div>
+            <div>
+                <input type="checkbox" name="acepta" required >
+                <span>Acepto los <strong><a href="">Terminos y condiciones</a></strong></span>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+        </form>
+
+    </main>
+
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
