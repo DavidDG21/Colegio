@@ -10,6 +10,7 @@
     --color-gray: rgb(217, 217, 217);
     --color-mustard:rgba(250, 172, 82, 0.82);
     --color-green-dark:rgb(59, 172, 182);
+    --color-blue: rgb(75, 123, 229);
 
 }
 
@@ -34,6 +35,7 @@ body{
     position: sticky;
     height: 6rem;
     width: 100%;
+    z-index: 1000;
 }
 
 .header-top{
@@ -58,12 +60,15 @@ body{
     align-items: center;
     background-color: var(--color-cyan) ;
 }
+.header-menu{
+    z-index: 100;
+}
 .button-bars{
     font-size: 1.5rem;
     background-color: transparent;
     border: none;
 }
-.fa-bars{
+.fa-bars, .fa-xmark{
     margin-right: 1rem;
 }
 
@@ -80,6 +85,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content:space-around;
+    
 }
 
 .menu-item{
@@ -103,6 +109,9 @@ body{
 
 .menu_active{
     display: flex;
+}
+.overflow_block{
+    overflow: hidden;
 }
 
 .button-bars, .fa-user, .fa-magnifying-glass, .fa-moon{
@@ -193,6 +202,7 @@ body{
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-template-rows: repeat(2, auto);
+    z-index: -5;
 }
 
 .star{
@@ -220,6 +230,7 @@ body{
 
 .star:hover{
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    color:aqua;
 }
 
 @media screen and (min-width:800px){
@@ -276,6 +287,7 @@ body{
         grid-row: 2/3;
     }
     .star{
+        margin: 1rem;
         width: 4rem;
         height: 4rem;
     }
@@ -325,6 +337,11 @@ body{
     }
 }
 
+@media screen and (min-width:900px){
+    .card_skill2{
+        margin: 0 2.5rem;
+    }
+}
 @media screen and (min-width:1024px){
     .contain_skill{
         width: 100%;
@@ -332,12 +349,134 @@ body{
         justify-content: center;
     }
     .card_skill2{
-        margin: 0 2.5rem;
+        margin: 0 8.3rem;
     }
     .card_skill1, .card_skill3{
         margin-top: 4rem;
     }
 }
 
+/* estilos a la seccion proposal */
 
+.education-proposal{
+    padding: 1rem 1rem 0;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1.5rem solid var(--color-blue) ;
+}
 
+.title-proposal{
+    margin-bottom:2rem; ;
+    font-family: var(--font-title);
+}
+.description-proposal{
+    margin-bottom: 2rem;
+}
+.image-proposal{
+    
+}
+.image-proposal img{
+    width: 13rem;
+}
+
+@media screen and (min-width:800px){
+    .education-proposal{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 2rem;
+        
+    }
+    .title-proposal{
+        margin: 2rem 0 0;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .description-proposal{
+        max-width: 30rem;
+        margin: auto 0;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .image-proposal{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .image-proposal img{
+        width: 15rem;
+    }
+}
+@media screen and (min-width:1024px){
+    .description-proposal{
+        margin: auto;
+    }
+    .image-proposal img{
+        width: 25rem;
+    }
+}
+
+/****************************** style pie depagina ***********/
+
+.footer{
+    text-align: center;
+}
+.container-ubication, .footer-contac{
+    padding: 1rem;
+}
+.ubication-title, .ubication-description{
+    margin: 1rem 0;
+    font-family: var(--font-description);
+}
+.ubication-button{
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+    background-color: var(--color-blue);
+    border: none;
+}
+
+.footer-contac{
+    background-color: var(--color-green-dark);
+}
+.contac-top li{
+    list-style: none;
+    padding: 1rem 0;
+}
+.contac-top li a, .contac-down p a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.contac-down{
+    border-top: 0.3rem solid var(--color-white);
+}
+.contac-down p{
+    margin: 1rem 0;  
+}
+.contac-down p:first-child i{
+    margin: 0 0.4rem 0 0;
+}
+.contac-down p a{
+    color: var(--color-black);
+}
+@media screen and (min-width: 800px){
+    .contac-top{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+    }
+    .contac-top li:last-child{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .contac-down{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .contac-top{
+        display: flex;
+        justify-content: space-around;
+    }
+}
