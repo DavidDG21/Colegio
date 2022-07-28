@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&family=Montserrat&family=Rubik:ital,wght@0,400;0,500;1,300&family=Sansita&family=Sansita+Swashed&family=Source+Sans+Pro&display=swap');
+
+:root{
+    --font-title: 'Sansita', sans-serif;
+    --font-title-cu:'Sansita Swashed', cursive;
+    --font-description: 'Montserrast', sans-serif;
+    --color-cyan: rgb(179, 232, 229);
+    --color-white: rgb(255, 255, 255);
+    --color-black: rgb(0, 0, 0);
+    --color-gray: rgb(217, 217, 217);
+    --color-mustard:rgba(250, 172, 82, 0.82);
+    --color-green-dark:rgb(59, 172, 182);
+    --color-blue: rgb(75, 123, 229);
+    --color-blue-dark: rgb(34, 87, 126);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-teacher img{
+    margin-top: 1rem;
+    width: 100%;
+    filter: blur(1px);
+}
+.title-anecdote{
+    max-width: 20rem;
+    font-weight:bold ;
+    position: absolute;
+    color: var(--color-white);
+}
+@media screen and (min-width:800px){
+    .image-teacher img {
+        max-width: 50rem;
+    }
+    .title-anecdote{
+        max-width: 30rem;
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width:1024px){
+    .title-anecdote{
+        max-width: 40rem;
+    }
+}
+
+/**************** dando estilos al formulario *******************/
+
+.form-comments{
+    background-color: var(--color-gray);
+    padding: 1rem;
+    margin:1rem 0 ;
+    text-align: center;
+    border-radius: 1rem;
+}
+.form-comments label h1{
+    color: var(--color-blue);
+}
+.form-comments label h1, .form-comments label p{
+    margin-bottom: 1rem;
+}
+.form-comments label textarea{
+    border: transparent;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+}
+.form-comments div{
+    margin: 0.5rem;
+    font-size: 0.7rem;
+}
+.form-comments div span strong a{
+    color: var(--color-black);
+}
+.form-comments div button{
+    font-size: 1rem;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    border: transparent;
+    border-radius: 1rem;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+}
+
+footer{
+    text-align: center;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+footer div p:last-child a{
+    color: var(--color-white);
+}
+
+@media screen and (min-width:750px){
+    .form-comments{
+        width: 40rem;
+        margin: 1.5rem auto;
+    }
+    .form-comments label textarea{
+        width: 30rem;
+    }
+}
+@media screen and (min-width:1024px){
+    .form-comments{
+        width: 50rem;
+    }
+    .form-comments label textarea {
+        width: 40rem;
+        height: 10rem;
+    }
+    .form-comments label textarea:focus{
+        border: 3px solid var(--color-blue);
+        outline: none;
+    }
+
+}

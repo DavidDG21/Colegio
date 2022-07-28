@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&family=Montserrat&family=Rubik:ital,wght@0,400;0,500;1,300&family=Sansita&family=Sansita+Swashed&family=Source+Sans+Pro&display=swap');
+
+:root{
+    --font-title: 'Sansita', sans-serif;
+    --font-title-cu:'Sansita Swashed', cursive;
+    --font-description: 'Montserrast', sans-serif;
+    --color-cyan: rgb(179, 232, 229);
+    --color-white: rgb(255, 255, 255);
+    --color-black: rgb(0, 0, 0);
+    --color-gray: rgb(217, 217, 217);
+    --color-mustard:rgba(250, 172, 82, 0.82);
+    --color-green-dark:rgb(59, 172, 182);
+    --color-blue: rgb(75, 123, 229);
+    --color-blue-dark: rgb(34, 87, 126);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-school{
+    /* border: 2rem solid red; */
+    text-align: center;
+    position: relative;   
+}
+.contain-school{
+    border: 1rem solid var(--color-blue-dark);
+    margin-bottom:0.5rem ;
+}
+.contain-school img{
+    width: 18rem;   
+    padding: 1.5rem;
+}
+.letters-top, .letters-bottom{
+    /* position: absolute; */
+    font-weight:800 ;
+    margin-bottom: 1.5rem;
+}
+.letters-top{
+
+}
+
+.letters-bottom{
+
+}
+
+@media screen and (min-width:800px){
+.contain-school img{
+    width: 40rem;
+}
+}
+
+@media screen and (min-width:1024px){
+    .image-school{
+        margin: 0 auto;
+        max-width: 70rem;
+    }
+    .contain-school img{
+        width: 50rem;
+    }
+
+}
+
+
+/************ estilos al card ********************************/
+.card-1, .card-2, .card-3, .card-4{
+   text-align: center;
+    color: var(--color-white);
+    width: 14rem;
+    margin: 0 auto 1.5rem;
+}
+.card-contain{
+    position: relative;
+    width: 14rem;
+    height: 17rem;
+    padding: 1rem;
+    margin-bottom:1.5rem;
+    background-color: var(--color-blue-dark);
+
+}
+
+.card-subtitle{
+position: absolute;
+bottom: 0;
+left: 0;
+font-size: 0.7rem;
+padding: 1rem;
+}
+.card-description{
+    padding: 0.5rem;
+    color: var(--color-black);
+}
+@media screen and (min-width:800px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+@media screen and (min-width:1024px) {
+    .card-1, .card-2, .card-3, .card-4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28rem;
+    }
+    .card-description{
+    width: 14rem;
+    }
+}
+
+
+
+.contac-down p a{
+    color: var(--color-white);
+}
+footer{
+    text-align: center;
+    background-color: var(--color-blue-dark);
+    color: var(--color-white);
+}
