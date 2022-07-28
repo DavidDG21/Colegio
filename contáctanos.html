@@ -31,7 +31,7 @@
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./Style/style.css">
-    <link rel="stylesheet" href="./Style/styleMatricu.css">
+    <link rel="stylesheet" href="./Style/contactos.css">
 </head>
 <body>
     <header class="header">
@@ -75,76 +75,91 @@
             </nav>
         </div>
     </header>
-    <main>
-        <div class="matricula-image">
-            <img src="./assets/MATRICULA/encuestas.webp" alt="Alumnos encuestados">
-        </div>
-        <h1 class="lomo-title">La educación transforma vidas</h1>
 
-        <form  class="form" action="#" method="post">
-            <h1 class="form-title">MATRICULA 2022</h1>
-            <P class="form-description">ingresa tus datos para comunicarnos contigo</P>
-            <div class="data-contain">
+    <main>
+        <form class="contac-us" action="#" method="post">
+            <h1>Deja tu información</h1>
+            <P>ingresa tus datos para comunicarnos contigo</P>
+            <div class="contac-container">
+
                 <div>
-                    <input type="text" id="nombres" minlength="3" maxlength="50" required placeholder="Nombres">
+                    <input type="text" minlength="3" maxlength="50" required placeholder="Nombres">
                 </div>
                 <div>
-                    <input type="text" minlength="5" maxlength="50" required placeholder="Apellidos">
+                    <input type="text" minlength="3" maxlength="50" required placeholder="Apellidos">
                 </div>
                 <div>
-                    <input type="text" minlength="5" maxlength="20" required placeholder="Distrito">
+                    <input type="text" minlength="3" maxlength="20" required placeholder="Distrito"> 
                 </div>
                 <div>
-                    <input type="email" minlength="5" maxlength="100" required placeholder="Correo electronico">
+                    <input type="email" minlength="5" maxlength="80" required placeholder="correo electronico">
                 </div>
                 <div>
-                    <input type="number" minlength="8" maxlength="8" required placeholder="DNI">
+                    <input type="number" minlength="7" maxlength="8" required placeholder="DNI">
                 </div>
                 <div>
-                    <input type="tel" minlength="9" maxlength="9" required placeholder="Teléfono">
+                    <input type="number" minlength="8" maxlength="9" required placeholder="Teléfono">
                 </div>
                 <div>
-                    <input type="text" minlength="10" maxlength="50" placeholder="Colegio de procedencia">
+                    <select name="grado" required id="">
+                        <option value selected>Elija el grado de secundaria</option>
+                        <option value="primero">primero</option>
+                        <option value="segundo">segundo</option>
+                        <option value="tercero">tercero</option>
+                        <option value="cuarto">cuarto</option>
+                        <option value="quinto">quinto</option>
+                    </select>
                 </div>
                 <div>
-                    <label for="">fecha de nacimiento</label>
-                    <input type="date" required placeholder="Fecha de nacimiento">
+                    <select name="asunto" required id="">
+                        <option value selected>Asunto</option>
+                        <option value="traslado">traslado</option>
+                        <option value="matricula">matricula</option>
+                    </select>                
                 </div>
                 <div>
-                        <select name="" id="" required name="grado" id="">
-                            <option value selected>Elija el grado de secundaria</option>
-                            <option value="primero">primero</option>
-                            <option value="segundo">segundo</option>
-                            <option value="tercero">tercero</option>
-                            <option value="cuarto">cuarto</option>
-                            <option value="quinto">quinto</option>
-                        </select>
-                 </div>
-            <div>
-                <input type="checkbox" name="acepta" required >
-                <span>Acepto los <strong><a href="">Terminos y condiciones</a></strong></span>
+                    <textarea name="descripcion" placeholder="Descripcion" required id="" cols="28" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="acepta3" required>
+                    <span>Acepto los <strong><a href="#">Terminos y Condiciones</a></strong></span>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
             </div>
-            <div>
-                <button type="submit">Enviar</button>
-            </div>
-        </div>
         </form>
     </main>
-    <section class="nivel-secundary">
-        <h1 class="secundary-title">NIVEL SECUNDARIA</h1>
-        <div class="secundary-imagen">
-            <img src="./assets/MATRICULA/alumnosUnimat.webp" alt="Alumnos unimat">
+    <article class="contac-information">
+        <h1>información de contacto</h1>
+        <h3>central telefónica</h3>
+        <p>987654321</p>
+        <h3>correo electronico</h3>
+        <p>colegioUnimat@unimat.edu.pe</p>
+        <h3>Ubíquenos</h3>
+        <p>San Vicente de Cañete [ref: A 1 cuadra del colegio de Santa Rita de Cassia]</p>
+    </article>
+    <article class="networks-social">
+        <h1>Redes Sociales</h1>
+        <div class="net-whattsap">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-        <p class="secundary-description">En colegio  UNIMAT potenciamos al máximo tu capacidad para alcanzar el éxito y  lograr tu ingreso a la universidad de tu preferencia...  En colegio  UNIMAT potenciamos al máximo tu capacidad para alcanzar el éxito y  lograr tu ingreso a la universidad de tu preferencia.En colegio  UNIMAT potenciamos al máximo tu capacidad para alcanzar el éxito y  lograr tu ingreso a la universidad de tu preferencia...    </p>
-    </section>
-    <section class="first-place">
-        <h1 class="first-title">EL INICIO DE UN NUEVO RETO</h1>
-        <div class="card-contain">
-            <figure>
-                <img src="" alt="">
-            </figure>
+        <div class="net-facebook">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
         </div>
-    </section>
+        <div class="net-youtube">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="net-instagram">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </article>
+
+    <div class="ubication-map">
+        <h1>Ubicanos en la siguiente dirección</h1>
+        <p>WJ76+JRJ N°158, San Vicente de Cañete 15701</p>
+        <button>ingrese aquí</button>
+    </div>
 
     <footer >
         <div class="contac-down">
@@ -154,6 +169,7 @@
             </P>
         </div>
     </footer>
+
     <script src="./JS/main.js"></script>
 </body>
 
