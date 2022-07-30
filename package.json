@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-final-colegio",
+  "version": "1.0.0",
+  "description": "conexion a mysql desde node js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidDG21/Colegio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidDG21/Colegio/issues"
+  },
+  "homepage": "https://github.com/DavidDG21/Colegio#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
